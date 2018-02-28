@@ -1,5 +1,5 @@
 /* 
- * File:   Homework 3.12
+ * File:   Homework 3.13
  * Author: Andrew Nicoletti
  * Created on Feb 28, 2018
  * Purpose:  Review CSC5
@@ -14,27 +14,28 @@ using namespace std;
 
 //Global Constants Only, No Global Variables
 //Like PI, e, Gravity, or conversions
-
+const float EPD=0.82, YPD=106.68;
 //Function Prototypes Here
 
 //Program Execution Begins Here
 int main() {
     //Declare all Variables Here
     
-    float totalAge;
-    
+    float dollar;
+    dollar=0;
     //Input or initialize values Here
+    cout<<"Input the amount of money in dollars."<<endl;
+    cin>>dollar;
     
-    totalAge = 123.45;
     
     //Process/Calculations Here
     
     
     //Output Located Here
-   
-    cout<<setw(12)<<setprecision(4)<<fixed<<showpoint<<totalAge;
+    cout<<setprecision(2)<<fixed<<"$"<<dollar<<"    "<<dollar*EPD<<endl;
+    cout<<setprecision(2)<<fixed<<"$"<<dollar<<"    "<<dollar*YPD<<endl;
+    
 
     //Exit
     return 0;
 }
-
